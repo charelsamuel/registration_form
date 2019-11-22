@@ -1,1 +1,89 @@
-<h1>Registration</h1>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration</h1>
+        <form id="form-register">
+            <fieldset id="fieldset-register">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="mobileNumber" name="mobileNumber"
+                        placeholder="Mobile Number">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+                </div>
+                <label for="dateOfBirth">Date of Birth</label>
+                <div class="form-group form-row">
+                    <div class="col">
+                        <select class="form-control" name="birthDay" id="birthDay">
+                            <option>Day</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="form-control" name="birthMonth" id="birthMonth">
+                            <option>Month</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="form-control" name="birthYear" id="birthYear">
+                            <option>Year</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="radioMale" value="male">
+                        <label class="form-check-label" for="inlineCheckbox1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="radioFemale" value="female">
+                        <label class="form-check-label" for="inlineCheckbox2">Female</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+                <button id="btn-register" type="button" class="btn btn-primary btn-block">Register</button>
+            </fieldset>
+        </form>
+
+    </div>
+    <!-- scripts -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
