@@ -3,6 +3,7 @@ $(document).ready(() => {
 
     $("#btn-register").click(() => {
         let params = $("#form-register").serialize();
+        $('.form-control').removeClass('is-invalid');
 
         $("#fieldset-register").attr("disabled", true);
         
@@ -12,6 +13,7 @@ $(document).ready(() => {
             $("#fieldset-register").attr("disabled", false);
             $.each(message.responseJSON.attributes, (index, error) => {
                 $('#' + error.name).addClass('is-invalid');
+                $('#' + error.name + 'Feedback').text(error.message);
             })
         }) ;
     });
