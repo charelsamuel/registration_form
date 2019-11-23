@@ -26,13 +26,13 @@ $(document).ready(() => {
         $("#fieldset-register").attr("disabled", true);
         
         $.post(url + "/account/register", params, data => {
-            
+            $('#btn-login').removeClass('invisible');
         }).fail(message => {
             $("#fieldset-register").attr("disabled", false);
             $.each(message.responseJSON.attributes, (index, error) => {
                 $('#' + error.name).addClass('is-invalid');
                 $('#' + error.name + 'Feedback').text(error.message);
             })
-        }) ;
+        }).done();
     });
 });
