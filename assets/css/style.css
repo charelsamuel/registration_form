@@ -1,0 +1,29 @@
+.btn-primary:hover {
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+
+.btn-primary:focus {
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+
+.btn-primary:active {
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+
+.btn-primary:disabled {
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+
+.purple {
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
